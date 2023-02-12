@@ -1,0 +1,44 @@
+{
+  "navs": [
+    {
+      "children": [
+        {
+          "type": null,
+          "list": [
+            { "name": "doc-install", "text": "安装", "path": "install" },
+            {
+              "name": "doc-quickstart",
+              "text": "快速上手",
+              "path": "quickstart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "组件",
+      "children": [
+        {
+          "type": "Basic",
+          "list": [
+            { "name": "doc-button", "text": "Button 按钮", "path": "button" },
+            { "name": "doc-border", "text": "Border 边框", "path": "border" }
+          ]
+        },
+        {
+          "type": "Form",
+          "list": [
+            { "name": "doc-radio", "text": "radio 单选框", "path": "radio" },
+            { "name": "doc-input", "text": "Input 输入框", "path": "input" }
+          ]
+        },
+        {
+          "type": "Navigation",
+          "list": [
+            { "name": "doc-menu", "text": "Menu 导航菜单", "path": "menu" }
+          ]
+        }
+      ]
+    }
+  ]
+}

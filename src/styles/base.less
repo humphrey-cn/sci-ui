@@ -1,0 +1,99 @@
+/* 设置项目基础样式配置--统一字体等 */
+html,
+body {
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB,
+    Microsoft YaHei, SimSun, sans-serif;
+  height: 100%;
+  width: 100%;
+  background: @sci-background-color;
+  color: @sci-color;
+  font-size: @sci-font-size;
+}
+
+/* 单行文本溢出省略 */
+.text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 两行文本溢出省略 */
+.text-overflow-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -moz-line-clamp: 2;
+  word-break: break-all;
+}
+
+.sci-title {
+  font-size: @sci-font-size-title;
+  color: @sci-color-title;
+}
+
+.sci-flex {
+  @sci-flex();
+}
+
+.sci-flex-c {
+  @sci-flex-c();
+}
+.sci-flex-c-c {
+  @sci-flex-c-c();
+}
+.sci-hover {
+  cursor: pointer;
+  &:hover {
+    color: @sci-color-hover !important;
+  }
+}
+.sci-active {
+  color: @sci-color-hover !important;
+}
+
+// 按钮基础样式
+.sci-button {
+  background-color: @sci-button-background-color;
+  color: @sci-button-color;
+  border: 1px solid @sci-button-border-color;
+  border-radius: @sci-button-border-radius;
+  width: @sci-button-width;
+  height: @sci-button-height;
+  cursor: pointer;
+  &:hover {
+    background-color: @sci-button-background-color-hover;
+    color: @sci-button-color-hover;
+  }
+  &.primary {
+    background-color: @sci-button-background-color-primary;
+    color: @sci-button-color-primary;
+    border: @sci-button-border-color-primary;
+    &:hover {
+      background-color: @sci-button-background-color-hover-primary;
+      color: @sci-button-color-hover-primary;
+    }
+  }
+}
+
+h1 {
+  font-size: @sci-font-size-h1;
+  @h();
+}
+h2 {
+  font-size: @sci-font-size-h2;
+  @h();
+}
+h3 {
+  font-size: @sci-font-size-h3;
+  @h();
+}
+
+p {
+  color: @sci-color;
+  font-size: @sci-font-size-p;
+  display: block;
+  padding: 10px;
+}

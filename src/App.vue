@@ -1,28 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <sci-topnav></sci-topnav>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import SciTopnav from '@/components/topnav.vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'sci-ui',
+  components: { SciTopnav }
 }
 </script>
 
-<style>
+<style lang="less" scoped>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 1200px;
+  margin: 0 auto;
 }
 </style>

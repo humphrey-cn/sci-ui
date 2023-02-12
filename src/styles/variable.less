@@ -1,0 +1,58 @@
+// 全局样式变量
+@sci-background-color: #fff; // 背景颜色
+@sci-color-title: #555; // 标题文本颜色
+@sci-font-size-title: 22px; // 标题字体大小
+@sci-color: #888; // 默认文本颜色
+@sci-font-size: 14px; // 默认字体大小
+@sci-color-hover: #e01cc3; // hover 字体颜色
+@sci-color-title-theme: #e01cc3; // 主题深色
+@sci-color-theme: #e98fdb; // 主题浅色
+
+// h1 - h6 标题
+@h: {
+  color: @sci-color-title;
+  display: block;
+  padding-top: 20px;
+};
+@sci-font-size-h1: 26px;
+@sci-font-size-h2: 24px;
+@sci-font-size-h3: 22px;
+@sci-font-size-p: 14px;
+
+// 边框
+@sci-border-color: #e98fdb;
+
+@sci-flex: {
+  display: flex;
+};
+
+// 上下居中
+@sci-flex-c: {
+  @sci-flex();
+  align-items: center;
+};
+
+// 上下左右居中
+@sci-flex-c-c: {
+  @sci-flex();
+  @sci-flex-c();
+  justify-content: center;
+};
+
+// 按钮相关
+@sci-button-font-size: 14px;
+@sci-button-width: 100px;
+@sci-button-height: 40px;
+@sci-button-border-radius: 4px;
+// 按钮默认样式
+@sci-button-color: #e01cc3;
+@sci-button-background-color: #fff;
+@sci-button-border-color: #e01cc3;
+@sci-button-background-color-hover: #e01cc3; 
+@sci-button-color-hover: #fff;
+// 重要的按钮
+@sci-button-background-color-hover-primary: #e98fdb; 
+@sci-button-color-hover-primary: #fff; 
+@sci-button-color-primary: #fff;
+@sci-button-background-color-primary: #e01cc3;
+@sci-button-border-color-primary: #e01cc3;
